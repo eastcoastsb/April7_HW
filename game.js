@@ -7,31 +7,29 @@ function play(index) {
 	if (start == true) {
 		var question1 = prompt("You awake inside a dark room with two doors.  You can take either the right or left door");
 
-		if (question1.toLowerCase() == "right") {
-			var question2 = prompt("This room has a ladder that can go either up or down.  Choose to either go up the ladder or down the ladder.");
-			if (question2.toLowerCase() == "up") {
-				alert("You have made it to freedom! Congratulations!")
+			if (question1.toLowerCase() == "left"){
+				alert("You are trapped!  Try going a different direction next time through.");
+			} 
+				if (question1.toLowerCase() == "right") {
+					var question2 = prompt("This room has a ladder that can go either up or down.  Choose to either go up the ladder or down the ladder.");
+
+					if (question2.toLowerCase() == "up") {
+					alert("You have made it to freedom! Congratulations!")
+
+			}	else if (question2.toLowerCase() == "down") {
+					alert("You have reached The Ironyard Academy!  You are stuck doing mock-ups forever!")
 			}
-
-		}  if (question2.toLowerCase() == "down") {
-				alert("You have reached The Ironyard Academy!  You are stuck doing mock-ups forever!")
-		}
-
-
-
-		if (question1.toLowerCase() == "left"){
-			var question3 = alert("You are trapped!  Try going a different direction next time through.");
-
-		} 
+				
+			}
+			
+			
 
 
 
 
 
 
-  }	else {
-			alert("Maybe another time");
-		}
+  
 	
 	
 
@@ -41,6 +39,9 @@ function play(index) {
 
 
 
+	} 
 
-
+	else {
+		alert("Maybe next time!");
+	}
 }
